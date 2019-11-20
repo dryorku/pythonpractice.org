@@ -10,3 +10,5 @@ for story_heading in soup.find_all(class_="css-1qwxefa esl82me0"):
         print(story_heading.a.text.replace("\n", " ").strip())
     else: 
         print(story_heading.contents[0].strip())
+
+#after running the script I get error for line 12 that says: TypeError: 'NoneType' object is non-callable
